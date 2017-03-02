@@ -481,7 +481,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document27]
-DocumentPath=..\LimeSDR\Schematics\16_BoardPowerSupplyBattery.SchDoc
+DocumentPath=Schematics\16_BoardPowerSupplyBattery.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -495,7 +495,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=URVCYCQM
+DocumentUniqueId=MXNCCAEV
 
 [Document28]
 DocumentPath=PCB\LimeSDR-USB_1v4.PcbDoc
