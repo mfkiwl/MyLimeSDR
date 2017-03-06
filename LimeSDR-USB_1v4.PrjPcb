@@ -1,6 +1,6 @@
 [Design]
 Version=1.0
-HierarchyMode=4
+HierarchyMode=0
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ReleaseVaultGUID=
@@ -181,7 +181,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=30
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -192,6 +192,23 @@ GenerateClassCluster=0
 DocumentUniqueId=MIAEFXAP
 
 [Document10]
+DocumentPath=Schematics\FPGA.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=32
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MJRYECUG
+
+[Document11]
 DocumentPath=Schematics\01_BlockDiagram.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -208,7 +225,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LVUUGVHQ
 
-[Document11]
+[Document12]
 DocumentPath=Schematics\02_PowerDiagram.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -225,7 +242,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OJBQGING
 
-[Document12]
+[Document13]
 DocumentPath=Schematics\03_ClockDiagram.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -242,7 +259,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RSBYAPWI
 
-[Document13]
+[Document14]
 DocumentPath=Schematics\04_LMS7002M_Misc.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -259,7 +276,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WASNWSLX
 
-[Document14]
+[Document15]
 DocumentPath=OutputJobs\ExportAssemblyDrawings.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -276,7 +293,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document16]
 DocumentPath=OutputJobs\ExportPCBDrawings.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -293,7 +310,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document17]
 DocumentPath=Schematics\05_LMS7002M_RF1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -310,7 +327,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QNDXLOMG
 
-[Document17]
+[Document18]
 DocumentPath=Schematics\06_LMS7002M_RF2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -327,7 +344,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HNKECVDF
 
-[Document18]
+[Document19]
 DocumentPath=Schematics\07_LMS7002M_Power.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -344,7 +361,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QINXVJTH
 
-[Document19]
+[Document20]
 DocumentPath=Schematics\08_FPGA_banks_1_2_3_4.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -361,7 +378,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QVFEWTDW
 
-[Document20]
+[Document21]
 DocumentPath=Schematics\09_FPGA_banks_5_6_7_8.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -378,7 +395,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PTGBICDA
 
-[Document21]
+[Document22]
 DocumentPath=Schematics\10_FPGA_misc.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -395,7 +412,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TJIBRJUD
 
-[Document22]
+[Document23]
 DocumentPath=Schematics\11_DDR2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -412,7 +429,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TVXUGQBU
 
-[Document23]
+[Document24]
 DocumentPath=Schematics\12_USB3_0_device.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -429,14 +446,14 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RRQKEBFM
 
-[Document24]
-DocumentPath=Schematics\13_USB3_0_power.SchDoc
+[Document25]
+DocumentPath=Schematics\13_USB3_0_peripheral.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=26
+AnnotateOrder=31
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -444,9 +461,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ETHRGDSC
+DocumentUniqueId=NOEMOROI
 
-[Document25]
+[Document26]
 DocumentPath=Schematics\14_Clocks.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -463,7 +480,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OUOOLFNI
 
-[Document26]
+[Document27]
 DocumentPath=Schematics\16_BoardPowerSupplyBattery.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -480,7 +497,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MXNCCAEV
 
-[Document27]
+[Document28]
 DocumentPath=Schematics\15_BoardPowerSupply.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -497,7 +514,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YJALXKYF
 
-[Document28]
+[Document29]
 DocumentPath=LimeSDR-USB_1v4.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -514,7 +531,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document29]
+[Document30]
 DocumentPath=PCB\LimeSDR-USB_1v4.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -530,6 +547,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RDYIQCBY
+
+[Document31]
+DocumentPath=Schematics\LMS7002M.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=33
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=RWXXNBNW
 
 [Configuration1]
 Name=Default Configuration
