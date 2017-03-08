@@ -175,40 +175,6 @@ GenerateClassCluster=0
 DocumentUniqueId=NQSMACOC
 
 [Document9]
-DocumentPath=Schematics\00_BoardDiagramEntryConn.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=30
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MIAEFXAP
-
-[Document10]
-DocumentPath=Schematics\FPGA.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=32
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MJRYECUG
-
-[Document11]
 DocumentPath=Schematics\01_BlockDiagram.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -225,7 +191,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LVUUGVHQ
 
-[Document12]
+[Document10]
 DocumentPath=Schematics\02_PowerDiagram.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -242,7 +208,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OJBQGING
 
-[Document13]
+[Document11]
 DocumentPath=Schematics\03_ClockDiagram.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -259,7 +225,24 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RSBYAPWI
 
-[Document14]
+[Document12]
+DocumentPath=Schematics\BoardDiagramEntryConn.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=30
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MIAEFXAP
+
+[Document13]
 DocumentPath=Schematics\04_LMS7002M_Misc.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -276,7 +259,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WASNWSLX
 
-[Document15]
+[Document14]
 DocumentPath=OutputJobs\ExportAssemblyDrawings.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -293,7 +276,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=OutputJobs\ExportPCBDrawings.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -310,7 +293,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document16]
 DocumentPath=Schematics\05_LMS7002M_RF1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -327,7 +310,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QNDXLOMG
 
-[Document18]
+[Document17]
 DocumentPath=Schematics\06_LMS7002M_RF2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -344,7 +327,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HNKECVDF
 
-[Document19]
+[Document18]
 DocumentPath=Schematics\07_LMS7002M_Power.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -361,7 +344,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QINXVJTH
 
-[Document20]
+[Document19]
 DocumentPath=Schematics\08_FPGA_banks_1_2_3_4.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -378,7 +361,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QVFEWTDW
 
-[Document21]
+[Document20]
 DocumentPath=Schematics\09_FPGA_banks_5_6_7_8.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -395,7 +378,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PTGBICDA
 
-[Document22]
+[Document21]
 DocumentPath=Schematics\10_FPGA_misc.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -412,7 +395,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TJIBRJUD
 
-[Document23]
+[Document22]
 DocumentPath=Schematics\11_DDR2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -429,7 +412,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TVXUGQBU
 
-[Document24]
+[Document23]
 DocumentPath=Schematics\12_USB3_0_device.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -446,7 +429,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RRQKEBFM
 
-[Document25]
+[Document24]
 DocumentPath=Schematics\13_USB3_0_peripheral.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -463,7 +446,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NOEMOROI
 
-[Document26]
+[Document25]
 DocumentPath=Schematics\14_Clocks.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -480,7 +463,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OUOOLFNI
 
-[Document27]
+[Document26]
 DocumentPath=Schematics\16_BoardPowerSupplyBattery.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -497,7 +480,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MXNCCAEV
 
-[Document28]
+[Document27]
 DocumentPath=Schematics\15_BoardPowerSupply.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -513,6 +496,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YJALXKYF
+
+[Document28]
+DocumentPath=Schematics\FPGA.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=32
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MJRYECUG
 
 [Document29]
 DocumentPath=LimeSDR-USB_1v4.Annotation
@@ -564,6 +564,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RWXXNBNW
+
+[Document32]
+DocumentPath=Schematics\LimeSDR_USB.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=LHTRHQJV
 
 [Configuration1]
 Name=Default Configuration
@@ -1525,7 +1542,7 @@ UpdateVariants=1
 PartTypes=0
 
 [ToDoManager]
-ProjectToDo1=Name=Check PCB footprints|Priority=4|Owner=AV|Category=PCB|UID=TNLCKOBP
+ProjectToDo1=Name=Check PCB footprints|Priority=4|State=1|Owner=AV|Category=PCB|UID=TNLCKOBP
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
