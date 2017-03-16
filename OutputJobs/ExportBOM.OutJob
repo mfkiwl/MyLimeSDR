@@ -21,7 +21,7 @@ TargetOutputMedium=Folder Structure
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Canon LBP6020
+TargetPrinter=NPI05C209 (HP LaserJet M1536dnf MFP)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -50,13 +50,13 @@ Configuration1_Item1=CaptionAsName
 Configuration1_Name2=Filter
 Configuration1_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
 Configuration1_Name3=General
-Configuration1_Item3=OpenExported=False|AddToProject=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=OutputJobs\BOM_Lime.xlt|BatchMode=5|FormWidth=1269|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration1_Item3=OpenExported=True|AddToProject=True|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=OutputJobs\BOM_Lime.xlt|BatchMode=5|FormWidth=1269|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
 Configuration1_Name4=GroupOrder
 Configuration1_Item4=Comment=True|Footprint=True
 Configuration1_Name5=SortOrder
 Configuration1_Item5=Designator=Up|Comment=Up|Footprint=Up
 Configuration1_Name6=VisibleOrder
-Configuration1_Item6=Assembly Info=92|Comment=92|Designator=92|Footprint=92|Quantity=92|Manufacturer Part Number=143|PartType=82|Supplier Part Number=139|Manufacturer Part Number 1=89|Supplier 1=58|Supplier Part Number 1=57|Manufacturer=80|Part Description=100
+Configuration1_Item6=Assembly Info=137|Comment=88|Designator=88|Footprint=88|Quantity=88|Manufacturer Part Number=136|PartType=78|Manufacturer Part Number 1=84|Supplier 1=55|Supplier Part Number 1=54|Manufacturer=76|Part Description=97
 
 [PublishSettings]
 OutputFilePath2=
@@ -84,7 +84,7 @@ MarkPortsId2=1
 GenerateTOC2=1
 ShowComponentParameters2=1
 GlobalBookmarks2=0
-OutputFilePath3=E:\Saniok\Lime Micro\Lime PCBs\LimeSDR-USB_1v4\Altium designer design files\Project Outputs for LimeSDR-USB_1v4\
+OutputFilePath3=F:\_space_AltiumDesigner\projects\LimeSDR-source\Project Outputs for LimeSDR-USB_1v4\
 ReleaseManaged3=1
 OutputBasePath3=Project Outputs for LimeSDR-USB_1v4
 OutputPathMedia3=
@@ -138,7 +138,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=
 OpenOutputs2=1
-RelativeOutputPath3=E:\Saniok\Lime Micro\Lime PCBs\LimeSDR-USB_1v4\Altium designer design files\Project Outputs for LimeSDR-USB_1v4\
+RelativeOutputPath3=F:\_space_AltiumDesigner\projects\LimeSDR-source\Project Outputs for LimeSDR-USB_1v4\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0
