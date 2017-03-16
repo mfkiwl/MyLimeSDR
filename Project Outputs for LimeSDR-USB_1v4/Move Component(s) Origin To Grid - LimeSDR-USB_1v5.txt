@@ -1,0 +1,5 @@
+Move Component Origin to Grid
+Filename     : F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc
+Date         : 2017/3/10
+Time         : 13:34:51
+Time Elapsed : 00:00:00

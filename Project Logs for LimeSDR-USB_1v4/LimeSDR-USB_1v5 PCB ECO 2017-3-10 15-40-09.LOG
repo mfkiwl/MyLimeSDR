@@ -1,0 +1,37 @@
+Change Component Footprint: Designator=IC2 Old Footprint=24FC512 New Footprint=24FC512
+Change Component Footprint: Designator=IC3 Old Footprint=24FC512 New Footprint=24FC512
+Change Component Footprint: Designator=IC39 Old Footprint=24FC512 New Footprint=24FC512
+Change Component Footprint: Designator=IC23 Old Footprint=ADF4002 New Footprint=ADF4002
+Change Component Footprint: Designator=IC27 Old Footprint=ADP2386 New Footprint=ADP2386
+Change Component Footprint: Designator=IC31 Old Footprint=ADP2386 New Footprint=ADP2386
+Change Component Footprint: Designator=IC13 Old Footprint=CYP-BZX121 New Footprint=CYP-BZX121
+Change Component Footprint: Designator=IC20 Old Footprint=LMK00105SQ New Footprint=LMK00105SQ
+Change Component Footprint: Designator=IC10 Old Footprint=M25P40-VMN6TPB_SO8N New Footprint=M25P40-VMN6TPB_SO8N
+Change Component Footprint: Designator=IC19 Old Footprint=M25P40-VMN6TPB_SO8N New Footprint=M25P40-VMN6TPB_SO8N
+Change Component Footprint: Designator=IC21 Old Footprint=NC7SV74K8XCT New Footprint=NC7SV74K8XCT
+Change Component Footprint: Designator=IC24 Old Footprint=Si5351C_20QFN New Footprint=Si5351C_20QFN
+Change Component Footprint: Designator=IC14 Old Footprint=SP3010-04UTG New Footprint=SP3010-04UTG
+Change Component Footprint: Designator=IC9 Old Footprint=TS3A5018PWR New Footprint=TS3A5018PWR
+Change Component Footprint: Designator=IC38 Old Footprint=TS5A23157 New Footprint=TS5A23157
+Change Component Library : Designator=IC13 Old Library=LimeMicroAltiumLib_schLib.SchLib New Library=LimeMicroAltiumLib_schLib.SchLib
+Added Component: Designator=J1(MMCX_UFL_conn_u)
+Added Component: Designator=J2(MMCX_UFL_conn_u)
+Added Component: Designator=J3(MMCX_UFL_conn_u)
+Added Component: Designator=J4(MMCX_UFL_conn_u)
+Added Component: Designator=J5(MMCX_UFL_conn_u)
+Added Component: Designator=J6(MMCX_UFL_conn_u)
+Added Component: Designator=J7(MMCX_UFL_conn_u)
+Added Component: Designator=J8(MMCX_UFL_conn_u)
+Added Component: Designator=J9(MMCX_UFL_conn_u)
+Added Component: Designator=J10(MMCX_UFL_conn_u)
+Added Component: Designator=J11(SWD_10_pin)
+Added Component: Designator=J12(SWD_10_pin)
+Added Component: Designator=J13(HDR_1x2)
+Added Component: Designator=J14(HDR_1x2_HALF_PITCH)
+Added Component: Designator=J15(microUSB3B_SM_v2)
+Added Component: Designator=J16(SWD_10_pin)
+Added Component: Designator=J17(CONN_PWR_JACK_v4)
+Added Component: Designator=J18(MMCX_UFL_conn_u)
+Added Component: Designator=J19(MMCX_UFL_conn_u)
+Added Component: Designator=J20(HDR_1x3)
+Added Component: Designator=J21(HDR_1x2_HALF_PITCH)
