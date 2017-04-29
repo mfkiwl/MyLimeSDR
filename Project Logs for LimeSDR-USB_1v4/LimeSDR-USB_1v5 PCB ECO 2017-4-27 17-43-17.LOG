@@ -1,0 +1,37 @@
+Change Component Library : Designator=C147 Old Library=<Unknown Vault> New Library=LimeFPGAboard_schLib.SchLib
+Change Component Library : Designator=C255 Old Library=<Unknown Vault> New Library=LimeFPGAboard_schLib.SchLib
+Change Component Library : Designator=R64 Old Library=<Unknown Vault> New Library=LimeFPGAboard_schLib.SchLib
+Change Component Library : Designator=R95 Old Library=<Unknown Vault> New Library=LimeFPGAboard_schLib.SchLib
+Change Component Library : Designator=C321 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C327 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C337 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C344 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C345 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C347 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C348 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C350 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C351 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C352 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C361 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=FR49 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=FR54 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=FR55 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=IC21 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=J18 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=R136 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=R139 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=R140 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=R143 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=R152 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=R153 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=R161 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=XO1 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=XO2 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Added Component: Designator=C302(CAP0402)
+Added Component: Designator=NT1(NetTie_Wide2)
+Added Pin To Net: NetName=VDD_FX3 Pin=C302-1
+Added Pin To Net: NetName=GND Pin=C302-2
+Added Pin To Net: NetName=FX3_GND Pin=NT1-1
+Added Pin To Net: NetName=GND Pin=NT1-2
+Added Member To Class: ClassName=USB3_0_Device Member=Component C302 100nF, 16V
+Added Member To Class: ClassName=USB3_0_Device Member=Component NT1 NetTie

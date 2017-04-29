@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GND Pin=C429-1
+Removed Pin From Net: NetName=GND Pin=C430-2
+Removed Pin From Net: NetName=GND Pin=C431-1
+Removed Pin From Net: NetName=GND Pin=C432-2
+Removed Pin From Net: NetName=GND Pin=C433-1
+Removed Pin From Net: NetName=VCC_SYS Pin=FR40-1
+Removed Member From Class: ClassName=USB3_0_Device Member=C429
+Removed Member From Class: ClassName=USB3_0_Device Member=C430
+Removed Member From Class: ClassName=USB3_0_Device Member=C431
+Removed Member From Class: ClassName=USB3_0_Device Member=C432
+Removed Member From Class: ClassName=USB3_0_Device Member=C433
+Removed Member From Class: ClassName=USB3_0_Device Member=FR40
+Added Pin To Net: NetName=VCC3P3_FX3 Pin=IC13-E10

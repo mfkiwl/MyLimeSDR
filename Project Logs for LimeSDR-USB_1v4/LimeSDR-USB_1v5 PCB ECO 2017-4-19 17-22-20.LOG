@@ -1,0 +1,24 @@
+Change Component Library : Designator=C7 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C8 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C13 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C24 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=C446 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=IC33 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=IC44 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=MECH4 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=MN17 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=MN18 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=MN19 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=MN20 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=MN49 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=MN50 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=MN51 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=MN52 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=T2 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=T3 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=T4 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=T6 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=T7 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=T8 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=T9 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Added Class: Name=VCC_EXT

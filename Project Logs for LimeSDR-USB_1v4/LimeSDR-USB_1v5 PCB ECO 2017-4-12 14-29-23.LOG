@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=C389-1
+Removed Pin From Net: NetName=VCC_SYS Pin=C389-2
+Removed Pin From Net: NetName=VCC1P2 Pin=C390-1
+Change Component Comment : Designator=C390 Old Comment=100uF New Comment=220uF
+Change Component Designator: OldDesignator=C390 NewDesignator=C389
+Added Component: Designator=C390(CAP1206)
+Added Pin To Net: NetName=VCC_SYS Pin=C389-1
+Added Pin To Net: NetName=GND Pin=C390-1
+Added Pin To Net: NetName=VCC1P2 Pin=C390-2

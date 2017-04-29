@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GND Pin=C273-1
+Removed Pin From Net: NetName=FX3_VBUS Pin=C273-2
+Change Component Library : Designator=C126 Old Library=<Unknown Vault> New Library=LimeFPGAboard_schLib.SchLib
+Change Component Library : Designator=C203 Old Library=<Unknown Vault> New Library=LimeFPGAboard_schLib.SchLib
+Change Component Library : Designator=R83 Old Library=<Unknown Vault> New Library=LimeFPGAboard_schLib.SchLib
+Change Component Library : Designator=VT7 Old Library=<Unknown Vault> New Library=LimeFPGAboard_schLib.SchLib
+Change Component Library : Designator=FR36 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=IC8 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Added Component: Designator=C273(CAP0402)
+Added Pin To Net: NetName=FX3_VBUS Pin=C273-1
+Added Pin To Net: NetName=GND Pin=C273-2

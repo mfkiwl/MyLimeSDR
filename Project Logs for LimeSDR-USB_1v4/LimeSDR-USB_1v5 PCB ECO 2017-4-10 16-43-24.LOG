@@ -1,0 +1,20 @@
+Removed Member From Class: ClassName=VCC1P4_LMS Member=VCC_LMS0
+Removed Member From Class: ClassName=VCC1P8_LMS Member=VCC_LMS1
+Removed Member From Class: ClassName=VCC1P25_LMS Member=VCC_LMS2
+Removed Member From Class: ClassName=VCC1P25_LMS_DIG Member=VCC_LMS3
+Change Component Footprint: Designator=C273 Old Footprint=CAP0402 New Footprint=CAP0402
+Added Pin To Net: NetName=VCC1P8 Pin=C364-1
+Added Pin To Net: NetName=VCC1P8 Pin=C365-1
+Added Pin To Net: NetName=VCC1P8 Pin=C366-1
+Added Pin To Net: NetName=VCC1P8 Pin=FR52-1
+Added Pin To Net: NetName=VCC1P8 Pin=IC24-10
+Added Pin To Net: NetName=VCC1P8 Pin=IC24-11
+Added Pin To Net: NetName=VCC1P8 Pin=IC24-14
+Change Net Name : Old Net Name=VCC_LMS0 New Net Name=VCC1P4_LMS
+Change Net Name : Old Net Name=VCC_LMS1 New Net Name=VCC1P8_LMS
+Change Net Name : Old Net Name=VCC_LMS2 New Net Name=VCC1P25_LMS
+Change Net Name : Old Net Name=VCC_LMS3 New Net Name=VCC1P25_LMS_DIG
+Added Member To Class: ClassName=VCC1P4_LMS Member=Wire VCC1P4_LMS
+Added Member To Class: ClassName=VCC1P8_LMS Member=Wire VCC1P8_LMS
+Added Member To Class: ClassName=VCC1P25_LMS_DIG Member=Wire VCC1P25_LMS_DIG
+Added Member To Class: ClassName=VCC1P25_LMS Member=Wire VCC1P25_LMS

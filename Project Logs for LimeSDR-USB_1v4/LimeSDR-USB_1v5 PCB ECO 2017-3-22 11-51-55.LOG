@@ -1,0 +1,34 @@
+Change Component Footprint: Designator=IC27 Old Footprint=ADP2386 New Footprint=QFN-LMZ306xx
+Change Component Footprint: Designator=IC31 Old Footprint=ADP2386 New Footprint=QFN-LMZ306xx
+Change Component Footprint: Designator=XT2 Old Footprint=CRYSTAL_4-LCC New Footprint=CRYSTAL_4-LCC
+Change Component Footprint: Designator=XT1 Old Footprint=CRYSTAL_4-LCC_v2 New Footprint=CRYSTAL_4-LCC_v2
+Change Component Footprint: Designator=IC16 Old Footprint=FPF3042 New Footprint=SOT223
+Change Component Footprint: Designator=J13 Old Footprint=HDR_1x2 New Footprint=HDR_1x2
+Change Component Footprint: Designator=J15 Old Footprint=microUSB3B_SM_v2 New Footprint=microUSB3B_SM
+Change Component Footprint: Designator=XO1 Old Footprint=RAKON_RPT7050A New Footprint=RAKON_RPT7050A
+Change Component Footprint: Designator=XO2 Old Footprint=RAKON_TXCO New Footprint=RAKON_TXCO
+Change Component Footprint: Designator=J11 Old Footprint=SWD_10_pin New Footprint=SWD_10_pin
+Change Component Footprint: Designator=J12 Old Footprint=SWD_10_pin New Footprint=SWD_10_pin
+Change Component Footprint: Designator=J16 Old Footprint=SWD_10_pin New Footprint=SWD_10_pin
+Change Component Comment : Designator=L1 Old Comment=1.5uH New Comment=1uH
+Change Component Comment : Designator=IC31 Old Comment=ADP2386 New Comment=LMZ30604
+Change Component Comment : Designator=IC27 Old Comment=ADP2386 New Comment=LMZ30606
+Change Component Comment : Designator=IC16 Old Comment=FPF3042 New Comment=LM1117IMPX-5.0
+Added Component: Designator=IC15(SC-70)
+Added Component: Designator=IC25(SOT-89-ADI-RK-3_M)
+Added Component: Designator=IC41(SC-70)
+Added Component: Designator=IC42(SC-70)
+Added Component: Designator=IC43(SC-70)
+Added Component: Designator=IC44(SOT-89-ADI-RK-3_M)
+Added Component: Designator=IC46(SON-10)
+Added Component: Designator=IC47(SOP-10)
+Added Component: Designator=IC48(SOP-10)
+Added Component: Designator=JMP1(MECH_JUMPER_HALF_PITCH)
+Added Component: Designator=LED1(LED-2x0603)
+Added Component: Designator=LED2(LED-2x0603)
+Added Component: Designator=LED7(LED-2x0603)
+Added Component: Designator=LED8(LED-2x0603)
+Added Component: Designator=LED9(LED-0603-GREEN)
+Added Component: Designator=LEDS1(LED_STANDOFF_H-201C)
+Added Component: Designator=LEDS2(LED_STANDOFF_H-201C)
+Added Component: Designator=Po1(Power_S_2Port)

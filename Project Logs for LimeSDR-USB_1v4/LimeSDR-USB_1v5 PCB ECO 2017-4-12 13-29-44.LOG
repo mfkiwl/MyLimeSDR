@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=C389 Old Footprint=CAP1206 New Footprint=CAP1206
+Change Component Footprint: Designator=L1 Old Footprint=FDVE1040_TOKO_INDUCTOR New Footprint=IHLP-2525CZ-11 INDUCTOR
+Change Component Footprint: Designator=L2 Old Footprint=FDVE1040_TOKO_INDUCTOR New Footprint=XFL4020 INDUCTOR

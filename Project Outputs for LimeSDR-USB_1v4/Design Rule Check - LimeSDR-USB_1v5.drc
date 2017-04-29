@@ -1,0 +1,88 @@
+Protel Design System Design Rule Check
+PCB File : F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc
+Date     : 2017/4/20
+Time     : 10:39:13
+
+WARNING: Unplated multi-layer pad(s) detected
+   Pad MECH1-MH1(28.5mm,101.1mm) on Multi-Layer on Net GND
+   Pad MECH2-MH1(28.5mm,48.9mm) on Multi-Layer on Net GND
+   Pad MECH3-MH1(121.5mm,101.1mm) on Multi-Layer on Net GND
+   Pad MECH4-MH1(121.4mm,48.625mm) on Multi-Layer on Net GND
+
+Processing Rule : Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_2_DQ[0..15]'))
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ0 And Net DDR2_2_DQ15 Length:16.903mm is not within 0.5mm tolerance of Length:18.703mm (1.3mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ1 And Net DDR2_2_DQ15 Length:14.103mm is not within 0.5mm tolerance of Length:18.703mm (4.1mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ2 And Net DDR2_2_DQ15 Length:14.372mm is not within 0.5mm tolerance of Length:18.703mm (3.831mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ3 And Net DDR2_2_DQ15 Length:9.172mm is not within 0.5mm tolerance of Length:18.703mm (9.031mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ4 And Net DDR2_2_DQ15 Length:15.103mm is not within 0.5mm tolerance of Length:18.703mm (3.1mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ5 And Net DDR2_2_DQ15 Length:16.503mm is not within 0.5mm tolerance of Length:18.703mm (1.7mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ6 And Net DDR2_2_DQ15 Length:7.172mm is not within 0.5mm tolerance of Length:18.703mm (11.031mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ7 And Net DDR2_2_DQ15 Length:17.903mm is not within 0.5mm tolerance of Length:18.703mm (0.3mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ8 And Net DDR2_2_DQ15 Length:15.703mm is not within 0.5mm tolerance of Length:18.703mm (2.5mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ9 And Net DDR2_2_DQ15 Length:7.903mm is not within 0.5mm tolerance of Length:18.703mm (10.3mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ10 And Net DDR2_2_DQ15 Length:13.572mm is not within 0.5mm tolerance of Length:18.703mm (4.631mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ11 And Net DDR2_2_DQ15 Length:8.503mm is not within 0.5mm tolerance of Length:18.703mm (9.7mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ12 And Net DDR2_2_DQ15 Length:7.903mm is not within 0.5mm tolerance of Length:18.703mm (10.3mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ13 And Net DDR2_2_DQ15 Length:14.172mm is not within 0.5mm tolerance of Length:18.703mm (4.031mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_2_DQ14 And Net DDR2_2_DQ15 Length:8.372mm is not within 0.5mm tolerance of Length:18.703mm (9.831mm short) 
+Rule Violations :15
+
+Processing Rule : Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_1_DQ[0..15]'))
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ0 And Net DDR2_1_DQ4 Length:17.972mm is not within 0.5mm tolerance of Length:24.372mm (5.9mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ1 And Net DDR2_1_DQ4 Length:15.772mm is not within 0.5mm tolerance of Length:24.372mm (8.1mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ2 And Net DDR2_1_DQ4 Length:11.572mm is not within 0.5mm tolerance of Length:24.372mm (12.3mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ3 And Net DDR2_1_DQ4 Length:17.772mm is not within 0.5mm tolerance of Length:24.372mm (6.1mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ5 And Net DDR2_1_DQ4 Length:15.972mm is not within 0.5mm tolerance of Length:24.372mm (7.9mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ6 And Net DDR2_1_DQ4 Length:16.772mm is not within 0.5mm tolerance of Length:24.372mm (7.1mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ7 And Net DDR2_1_DQ4 Length:13.372mm is not within 0.5mm tolerance of Length:24.372mm (10.5mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ8 And Net DDR2_1_DQ4 Length:12.503mm is not within 0.5mm tolerance of Length:24.372mm (11.369mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ9 And Net DDR2_1_DQ4 Length:16.303mm is not within 0.5mm tolerance of Length:24.372mm (7.569mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ10 And Net DDR2_1_DQ4 Length:11.503mm is not within 0.5mm tolerance of Length:24.372mm (12.369mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ11 And Net DDR2_1_DQ4 Length:16.572mm is not within 0.5mm tolerance of Length:24.372mm (7.3mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ12 And Net DDR2_1_DQ4 Length:17.172mm is not within 0.5mm tolerance of Length:24.372mm (6.7mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ13 And Net DDR2_1_DQ4 Length:8.903mm is not within 0.5mm tolerance of Length:24.372mm (14.969mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ14 And Net DDR2_1_DQ4 Length:18.572mm is not within 0.5mm tolerance of Length:24.372mm (5.3mm short) 
+   Violation between Matched Net Lengths: Between Net DDR2_1_DQ15 And Net DDR2_1_DQ4 Length:12.503mm is not within 0.5mm tolerance of Length:24.372mm (11.369mm short) 
+Rule Violations :15
+
+Processing Rule : Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_2_A[0..12]'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_1_A[0..12]'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=1mm) (InNetClass('LMS_PORT1'))
+   Violation between Matched Net Lengths: Between Net LMS_DIQ1_D1 And Net LMS_DIQ1_D6 Length:44.932mm is not within 1mm tolerance of Length:46.6mm (0.668mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ1_D2 And Net LMS_DIQ1_D6 Length:42.6mm is not within 1mm tolerance of Length:46.6mm (3mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ1_D3 And Net LMS_DIQ1_D6 Length:42.266mm is not within 1mm tolerance of Length:46.6mm (3.334mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ1_D4 And Net LMS_DIQ1_D6 Length:41.266mm is not within 1mm tolerance of Length:46.6mm (4.334mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ1_D5 And Net LMS_DIQ1_D6 Length:40.266mm is not within 1mm tolerance of Length:46.6mm (5.334mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ1_D8 And Net LMS_DIQ1_D6 Length:44.6mm is not within 1mm tolerance of Length:46.6mm (1mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ1_D9 And Net LMS_DIQ1_D6 Length:42.934mm is not within 1mm tolerance of Length:46.6mm (2.666mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ1_D10 And Net LMS_DIQ1_D6 Length:42.6mm is not within 1mm tolerance of Length:46.6mm (3mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ1_D11 And Net LMS_DIQ1_D6 Length:40.934mm is not within 1mm tolerance of Length:46.6mm (4.666mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_ENABLE_IQSEL1 And Net LMS_DIQ1_D6 Length:29.268mm is not within 1mm tolerance of Length:46.6mm (16.332mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_MCLK1 And Net LMS_DIQ1_D6 Length:42.268mm is not within 1mm tolerance of Length:46.6mm (3.332mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_TXNRX1 And Net LMS_DIQ1_D6 Length:0mm is not within 1mm tolerance of Length:46.6mm (45.6mm short) 
+Rule Violations :12
+
+Processing Rule : Matched Lengths(Tolerance=1mm) (InNetClass('LMS_PORT2'))
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D0 And Net LMS_DIQ2_D4 Length:29.938mm is not within 1mm tolerance of Length:34.604mm (3.666mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D1 And Net LMS_DIQ2_D4 Length:28.938mm is not within 1mm tolerance of Length:34.604mm (4.666mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D2 And Net LMS_DIQ2_D4 Length:27.604mm is not within 1mm tolerance of Length:34.604mm (6mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D3 And Net LMS_DIQ2_D4 Length:25.938mm is not within 1mm tolerance of Length:34.604mm (7.666mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D5 And Net LMS_DIQ2_D4 Length:32.272mm is not within 1mm tolerance of Length:34.604mm (1.332mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D6 And Net LMS_DIQ2_D4 Length:33.27mm is not within 1mm tolerance of Length:34.604mm (0.334mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D7 And Net LMS_DIQ2_D4 Length:31.604mm is not within 1mm tolerance of Length:34.604mm (2mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D8 And Net LMS_DIQ2_D4 Length:31.27mm is not within 1mm tolerance of Length:34.604mm (2.334mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D9 And Net LMS_DIQ2_D4 Length:29.604mm is not within 1mm tolerance of Length:34.604mm (4mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D10 And Net LMS_DIQ2_D4 Length:29.936mm is not within 1mm tolerance of Length:34.604mm (3.668mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_DIQ2_D11 And Net LMS_DIQ2_D4 Length:28.27mm is not within 1mm tolerance of Length:34.604mm (5.334mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_ENABLE_IQSEL2 And Net LMS_DIQ2_D4 Length:30.27mm is not within 1mm tolerance of Length:34.604mm (3.334mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_FCLK2 And Net LMS_DIQ2_D4 Length:27.602mm is not within 1mm tolerance of Length:34.604mm (6.002mm short) 
+   Violation between Matched Net Lengths: Between Net LMS_TXNRX2 And Net LMS_DIQ2_D4 Length:0mm is not within 1mm tolerance of Length:34.604mm (33.604mm short) 
+Rule Violations :14
+
+
+Violations Detected : 56
+Time Elapsed        : 00:00:00

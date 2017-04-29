@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=VCC_SYS Pin=R187-1
+Removed Pin From Net: NetName=VBUS_EXT Pin=R187-2
+Removed Pin From Net: NetName=VCC_SYS Pin=R195-1
+Removed Pin From Net: NetName=VCC_INT Pin=R195-2
+Change Component Footprint: Designator=R187 Old Footprint=RES0402 New Footprint=RES0603
+Change Component Footprint: Designator=R195 Old Footprint=RES0402 New Footprint=RES0603
+Added Pin To Net: NetName=VBUS_EXT Pin=R187-1
+Added Pin To Net: NetName=VCC_SYS Pin=R187-2
+Added Pin To Net: NetName=VCC_INT Pin=R195-1
+Added Pin To Net: NetName=VCC_SYS Pin=R195-2

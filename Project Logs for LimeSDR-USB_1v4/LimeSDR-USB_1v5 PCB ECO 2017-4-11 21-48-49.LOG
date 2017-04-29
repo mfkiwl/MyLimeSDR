@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=VCC_SYS Pin=C386-1
+Removed Pin From Net: NetName=GND Pin=C386-2
+Removed Pin From Net: NetName=VCC1P2 Pin=C390-1
+Removed Pin From Net: NetName=GND Pin=C390-2
+Change Component Footprint: Designator=C386 Old Footprint=CAP_T520D_THIN New Footprint=CAP1206
+Change Component Footprint: Designator=C390 Old Footprint=CAP_T520D_THIN New Footprint=CAP1206
+Change Component Comment : Designator=C379 Old Comment=47uF,6.3V New Comment=100uF, 6.3V
+Change Component Comment : Designator=C390 Old Comment=100uF New Comment=100uF, 6.3V
+Change Component Comment : Designator=C386 Old Comment=220uF,6.3V New Comment=100uF, 6.3V
+Added Component: Designator=C389(CAP1206)
+Added Pin To Net: NetName=GND Pin=C386-1
+Added Pin To Net: NetName=VCC_SYS Pin=C386-2
+Added Pin To Net: NetName=GND Pin=C389-1
+Added Pin To Net: NetName=VCC_SYS Pin=C389-2
+Added Pin To Net: NetName=GND Pin=C390-1
+Added Pin To Net: NetName=VCC1P2 Pin=C390-2
+Added Member To Class: ClassName=BoardPowerSupply Member=Component C389 100uF, 6.3V

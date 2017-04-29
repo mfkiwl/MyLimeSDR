@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=T11 Old Footprint=AT-2 New Footprint=RES1206
+Change Component Library : Designator=C278 Old Library=<Unknown Vault> New Library=LimeFPGAboard_schLib.SchLib
+Change Component Library : Designator=IC11 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=IC12 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=J16 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Added Member To Class: ClassName=USB3_0_Device Member=Component XT1 19.2MHz

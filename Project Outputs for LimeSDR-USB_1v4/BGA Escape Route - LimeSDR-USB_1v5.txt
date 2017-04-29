@@ -1,0 +1,9 @@
+BGA Escape Route
+Filename     : F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc
+Date         : 2017/3/23
+Time         : 10:48:46
+Time Elapsed : 00:00:00
+
+IC13
+    Pad IC13-B7(43.025mm,75.5mm) on Top on Net GND
+count : 1

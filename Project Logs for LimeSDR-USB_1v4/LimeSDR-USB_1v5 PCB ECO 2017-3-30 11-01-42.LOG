@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=VCC_SYS Pin=C389-1
+Removed Pin From Net: NetName=GND Pin=C389-2
+Removed Member From Class: ClassName=BoardPowerSupply Member=C389

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=FX3_VBUS Pin=C273-1
+Removed Pin From Net: NetName=GND Pin=C273-2
+Change Component Footprint: Designator=C273 Old Footprint=CAP0402 New Footprint=CAP0603
+Change Component Comment : Designator=C273 Old Comment=1uF, 10V New Comment=1uF, 16V
+Added Pin To Net: NetName=GND Pin=C273-1
+Added Pin To Net: NetName=FX3_VBUS Pin=C273-2

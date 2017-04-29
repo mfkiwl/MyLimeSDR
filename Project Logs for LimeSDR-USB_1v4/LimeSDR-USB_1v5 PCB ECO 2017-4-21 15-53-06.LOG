@@ -1,0 +1,14 @@
+Removed Member From Class: ClassName=FX3_DQNET Member=FX3_CTL13
+Removed Member From Class: ClassName=FX3_DQNET Member=FX3_CTL14
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_G5
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_G6
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_G7
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_H5
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_H7
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_H8
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_J5
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_J7
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_K6
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_K7
+Removed Member From Class: ClassName=FX3_DQNET Member=NetIC13_K8
+Added Class: Name=FX3_CTLNET

@@ -1,0 +1,19 @@
+Change Component Footprint: Designator=C289 Old Footprint=CAP0402 New Footprint=CAP0402
+Change Component Footprint: Designator=C456 Old Footprint=CAP0402 New Footprint=CAP0402
+Change Component Footprint: Designator=C369 Old Footprint=CAP0603 New Footprint=CAP0603
+Added Component: Designator=LED5(LED-2x0603)
+Added Component: Designator=R215(RES0402)
+Added Component: Designator=R216(RES0402)
+Added Pin To Net: NetName=GND Pin=LED5-3
+Added Pin To Net: NetName=GND Pin=LED5-4
+Added Pin To Net: NetName=VCC_SYS Pin=R215-1
+Added Pin To Net: NetName=VBUS_EXT Pin=R216-1
+Added Pin To Net: NetName=NetLED5_1 Pin=LED5-1
+Added Pin To Net: NetName=NetLED5_1 Pin=R215-2
+Added Net: Name=NetLED5_1
+Added Pin To Net: NetName=NetLED5_2 Pin=LED5-2
+Added Pin To Net: NetName=NetLED5_2 Pin=R216-2
+Added Net: Name=NetLED5_2
+Added Member To Class: ClassName=BQ25890 Member=Component LED5 LED_RG_SMD
+Added Member To Class: ClassName=BQ25890 Member=Component R215 500R, 1%
+Added Member To Class: ClassName=BQ25890 Member=Component R216 500R, 1%

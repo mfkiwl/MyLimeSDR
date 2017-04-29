@@ -1,0 +1,8 @@
+Change Component Library : Designator=IC20 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=IC23 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=IC29 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Added Pin To Net: NetName=VCC1P8_DDR2 Pin=C387-2
+Added Pin To Net: NetName=VCC1P8_DDR2 Pin=IC29-1
+Added Pin To Net: NetName=VCC1P8_DDR2 Pin=IC29-2
+Added Pin To Net: NetName=VCC1P8_DDR2 Pin=R191-1
+Change Net Name : Old Net Name=VCC1P8_DDR2 New Net Name=VCC_P4

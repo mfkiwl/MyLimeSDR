@@ -1,0 +1,105 @@
+Removed Pin From Net: NetName=VCC_SYS Pin=C370-2
+Removed Pin From Net: NetName=VCC_SYS Pin=C422-2
+Removed Pin From Net: NetName=VCC_SYS Pin=IC37-15
+Removed Pin From Net: NetName=VCC_SYS Pin=IC37-16
+Removed Pin From Net: NetName=VCC_SYS Pin=L1-2
+Removed Pin From Net: NetName=VCC_SYS Pin=LED4-2
+Removed Pin From Net: NetName=VCC_SYS Pin=R121-2
+Change Component Library : Designator=IC35 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Added Component: Designator=C318(CAP0603)
+Added Component: Designator=C320(CAP0603)
+Added Component: Designator=C429(CAP0603)
+Added Component: Designator=C430(CAP0402)
+Added Component: Designator=C431(CAP0603)
+Added Component: Designator=C432(CAP0603)
+Added Component: Designator=C433(CAP0603)
+Added Component: Designator=C454(CAP0603)
+Added Component: Designator=C455(CAP0603)
+Added Component: Designator=C456(CAP0603)
+Added Component: Designator=C457(CAP0402)
+Added Component: Designator=FR40(RES0805)
+Added Component: Designator=IC45(FPF3042)
+Added Component: Designator=J17(microUSB)
+Added Component: Designator=R187(RES0402)
+Added Component: Designator=R195(RES0402)
+Added Pin To Net: NetName=GND Pin=C318-1
+Added Pin To Net: NetName=GND Pin=C320-1
+Added Pin To Net: NetName=GND Pin=C429-1
+Added Pin To Net: NetName=GND Pin=C430-2
+Added Pin To Net: NetName=GND Pin=C431-1
+Added Pin To Net: NetName=GND Pin=C432-1
+Added Pin To Net: NetName=GND Pin=C433-1
+Added Pin To Net: NetName=VCC_SYS Pin=C433-2
+Added Pin To Net: NetName=GND Pin=C454-1
+Added Pin To Net: NetName=VCC_SYS Pin=C454-2
+Added Pin To Net: NetName=GND Pin=C455-1
+Added Pin To Net: NetName=VCC_SYS Pin=C455-2
+Added Pin To Net: NetName=GND Pin=C456-1
+Added Pin To Net: NetName=VCC_SYS Pin=C456-2
+Added Pin To Net: NetName=VCC_SYS Pin=C457-1
+Added Pin To Net: NetName=GND Pin=C457-2
+Added Pin To Net: NetName=VCC_SYS Pin=FR40-1
+Added Pin To Net: NetName=GND Pin=IC45-C2
+Added Pin To Net: NetName=GND Pin=IC45-D1
+Added Pin To Net: NetName=GND Pin=IC45-D2
+Added Pin To Net: NetName=GND Pin=IC45-D3
+Added Pin To Net: NetName=GND Pin=J17-5
+Added Pin To Net: NetName=GND Pin=J17-6
+Added Pin To Net: NetName=GND Pin=J17-6
+Added Pin To Net: NetName=GND Pin=J17-6
+Added Pin To Net: NetName=GND Pin=J17-6
+Added Pin To Net: NetName=GND Pin=J17-6
+Added Pin To Net: NetName=GND Pin=J17-6
+Added Pin To Net: NetName=VCC_SYS Pin=R187-1
+Added Pin To Net: NetName=VCC_SYS Pin=R195-1
+Added Pin To Net: NetName=FPF_VINSEL Pin=IC45-D4
+Added Net: Name=FPF_VINSEL
+Added Pin To Net: NetName=NetC429_2 Pin=C429-2
+Added Pin To Net: NetName=NetC429_2 Pin=FR40-2
+Added Pin To Net: NetName=NetC429_2 Pin=IC45-A2
+Added Pin To Net: NetName=NetC429_2 Pin=IC45-A3
+Added Pin To Net: NetName=NetC429_2 Pin=IC45-B3
+Added Pin To Net: NetName=NetC429_2 Pin=IC45-C3
+Added Net: Name=NetC429_2
+Added Pin To Net: NetName=VBUS_EXT Pin=C318-2
+Added Pin To Net: NetName=VBUS_EXT Pin=C320-2
+Added Pin To Net: NetName=VBUS_EXT Pin=C430-1
+Added Pin To Net: NetName=VBUS_EXT Pin=C432-2
+Added Pin To Net: NetName=VBUS_EXT Pin=IC45-A1
+Added Pin To Net: NetName=VBUS_EXT Pin=IC45-B1
+Added Pin To Net: NetName=VBUS_EXT Pin=IC45-C1
+Added Pin To Net: NetName=VBUS_EXT Pin=J17-1
+Added Pin To Net: NetName=VBUS_EXT Pin=R187-2
+Added Net: Name=VBUS_EXT
+Added Pin To Net: NetName=VCC_INT Pin=C370-2
+Added Pin To Net: NetName=VCC_INT Pin=C422-2
+Added Pin To Net: NetName=VCC_INT Pin=C431-2
+Added Pin To Net: NetName=VCC_INT Pin=IC37-15
+Added Pin To Net: NetName=VCC_INT Pin=IC37-16
+Added Pin To Net: NetName=VCC_INT Pin=IC45-A4
+Added Pin To Net: NetName=VCC_INT Pin=IC45-B4
+Added Pin To Net: NetName=VCC_INT Pin=IC45-C4
+Added Pin To Net: NetName=VCC_INT Pin=L1-2
+Added Pin To Net: NetName=VCC_INT Pin=LED4-2
+Added Pin To Net: NetName=VCC_INT Pin=R121-2
+Added Pin To Net: NetName=VCC_INT Pin=R195-2
+Added Net: Name=VCC_INT
+Added Class: Name=VBUS_EXT
+Added Class: Name=VCC_EXT
+Added Class: Name=VCC_INT
+Added Member To Class: ClassName=BQ25890 Member=Component C318 10uF, 25V
+Added Member To Class: ClassName=BQ25890 Member=Component C320 10uF, 25V
+Added Member To Class: ClassName=BQ25890 Member=Component C429 10uF, 25V
+Added Member To Class: ClassName=BQ25890 Member=Component C430 100nF, 16V
+Added Member To Class: ClassName=BQ25890 Member=Component C431 10uF, 25V
+Added Member To Class: ClassName=BQ25890 Member=Component C432 10uF, 16V
+Added Member To Class: ClassName=BQ25890 Member=Component C433 10uF, 25V
+Added Member To Class: ClassName=BQ25890 Member=Component C454 10uF, 25V
+Added Member To Class: ClassName=BQ25890 Member=Component C455 10uF, 25V
+Added Member To Class: ClassName=BQ25890 Member=Component C456 10uF, 25V
+Added Member To Class: ClassName=BQ25890 Member=Component C457 100nF, 16V
+Added Member To Class: ClassName=BQ25890 Member=Component FR40 600R, 2A
+Added Member To Class: ClassName=BQ25890 Member=Component IC45 FPF3042
+Added Member To Class: ClassName=BQ25890 Member=Component J17 USB Micro Type B
+Added Member To Class: ClassName=BQ25890 Member=Component R187 0R
+Added Member To Class: ClassName=BQ25890 Member=Component R195 0R

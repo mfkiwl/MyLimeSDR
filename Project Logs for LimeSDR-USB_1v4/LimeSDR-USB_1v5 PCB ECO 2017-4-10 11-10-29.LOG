@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=VCC_P1 Pin=C364-1
+Removed Pin From Net: NetName=VCC_P1 Pin=C365-1
+Removed Pin From Net: NetName=VCC_P1 Pin=C366-1
+Removed Pin From Net: NetName=VCC_P1 Pin=FR52-1
+Removed Pin From Net: NetName=VCC_P1 Pin=IC24-10
+Removed Pin From Net: NetName=VCC_P1 Pin=IC24-11
+Removed Pin From Net: NetName=VCC_P1 Pin=IC24-14
+Removed Member From Class: ClassName=VCC1P2 Member=VCC_P0
+Removed Member From Class: ClassName=VCC1P8 Member=VCC_P1
+Removed Member From Class: ClassName=VCC2P5 Member=VCC_P2
+Removed Member From Class: ClassName=I2C_BRDG Member=VCC_P3
+Removed Member From Class: ClassName=VCC3P3 Member=VCC_P3
+Change Net Name : Old Net Name=VCC_P0 New Net Name=VCC1P2
+Change Net Name : Old Net Name=VCC_P1 New Net Name=VCC1P8
+Change Net Name : Old Net Name=VCC_P2 New Net Name=VCC2P5
+Change Net Name : Old Net Name=VCC_P3 New Net Name=VCC3P3
+Change Net Name : Old Net Name=VCC_P4 New Net Name=VCC1P8_DDR2
+Added Pin To Net: NetName=VCC_P1 Pin=C364-1
+Added Pin To Net: NetName=VCC_P1 Pin=C365-1
+Added Pin To Net: NetName=VCC_P1 Pin=C366-1
+Added Pin To Net: NetName=VCC_P1 Pin=FR52-1
+Added Pin To Net: NetName=VCC_P1 Pin=IC24-10
+Added Pin To Net: NetName=VCC_P1 Pin=IC24-11
+Added Pin To Net: NetName=VCC_P1 Pin=IC24-14
+Added Net: Name=VCC_P1
+Added Member To Class: ClassName=VCC1P2 Member=Wire VCC1P2
+Added Member To Class: ClassName=VCC1P8_DDR2 Member=Wire VCC1P8_DDR2
+Added Member To Class: ClassName=VCC1P8 Member=Wire VCC1P8
+Added Member To Class: ClassName=VCC2P5 Member=Wire VCC2P5
+Added Member To Class: ClassName=I2C_BRDG Member=Wire VCC3P3
+Added Member To Class: ClassName=VCC3P3 Member=Wire VCC3P3

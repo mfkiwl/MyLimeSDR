@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=C390-1
+Removed Pin From Net: NetName=VCC1P2 Pin=C390-2
+Change Component Footprint: Designator=C390 Old Footprint=CAP1206 New Footprint=CAP_T520D_THIN
+Change Component Comment : Designator=C390 Old Comment=100uF, 6.3V New Comment=100uF
+Added Pin To Net: NetName=VCC1P2 Pin=C390-1
+Added Pin To Net: NetName=GND Pin=C390-2

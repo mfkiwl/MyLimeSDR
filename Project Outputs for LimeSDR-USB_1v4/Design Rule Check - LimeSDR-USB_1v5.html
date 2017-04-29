@@ -1,0 +1,500 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://D:\AD16Document\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2017/4/20</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10:39:13</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc" class="file"><acronym title="F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc">F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">4</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">56</td></tr>
+</table>
+</td>
+</table><a name="IDUZ2HKNTK01SQFBXJUNIZRFB4UJRCN1JIPWWGDHFM2A1PECSHMO4C"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMGQOZUDQ55QBBBR5NP3TCWF5EHDC3L14RIFSZ4DJ1CUCHKXU2MXB">Unplated multi-layer pad(s) detected</a></td>
+<td class="column2">4</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">4</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYO2JBE20MP01P23GSF3QVMAWJEAV1HII20HA0YGNT2YKTH1HBVAM">Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_2_DQ[0..15]'))</a></td>
+<td class="column2">15</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3SZJAZXO3ZAWIFCLRGFOMJDJBCLZ12FS1NIJG4BGKLOIHU1VHPVP">Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_1_DQ[0..15]'))</a></td>
+<td class="column2">15</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIOQ234YZ0QPAOQHOGT2Q1JYRWGE0W4GWGHNFI1BI4BOK2OHMRE2M">Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_2_A[0..12]'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM12IMTRBO1WGBFHQSYBZES41NMJAQW033PVPZKEIHRSUFNR433BM">Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_1_A[0..12]'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB5QWYYOLJSTRF2DDOXMU3Z5X5DZDLWTQOLPFLOLA5O0AF2LWLBUP">Matched Lengths(Tolerance=1mm) (InNetClass('LMS_PORT1'))</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDN1JII3SQH1ILLPGKUBSAS42GPLC3L0UYWSU2YYJU5E4UBMUOWOIE">Matched Lengths(Tolerance=1mm) (InNetClass('LMS_PORT2'))</a></td>
+<td class="column2">14</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">56</td>
+</tr>
+</table><br><a name="IDOOBZFSNTSTQXK30E3OUDZ14SLNQLUS0Z0KBPBCUHHDLTC34LZCH"><h2>Warnings</h2></a><a name="IDMGQOZUDQ55QBBBR5NP3TCWF5EHDC3L14RIFSZ4DJ1CUCHKXU2MXB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Unplated multi-layer pad(s) detected</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1021.654mil|Location2.X=1222.441mil|Location1.Y=3879.921mil|Location2.Y=4080.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1021.654mil|Location2.X=1222.441mil|Location1.Y=3879.921mil|Location2.Y=4080.709mil|Absolute=True">Pad MECH1-MH1(28.5mm,101.1mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=806.103mil|Location2.X=4909.45mil|Location1.Y=1808.071mil|Location2.Y=4087.598mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=806.103mil|Location2.X=4909.45mil|Location1.Y=1808.071mil|Location2.Y=4087.598mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1021.654mil|Location2.X=1222.441mil|Location1.Y=1824.803mil|Location2.Y=2025.591mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1021.654mil|Location2.X=1222.441mil|Location1.Y=1824.803mil|Location2.Y=2025.591mil|Absolute=True">Pad MECH2-MH1(28.5mm,48.9mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=806.103mil|Location2.X=4909.45mil|Location1.Y=1808.071mil|Location2.Y=4087.598mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=806.103mil|Location2.X=4909.45mil|Location1.Y=1808.071mil|Location2.Y=4087.598mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4683.071mil|Location2.X=4883.858mil|Location1.Y=3879.921mil|Location2.Y=4080.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4683.071mil|Location2.X=4883.858mil|Location1.Y=3879.921mil|Location2.Y=4080.709mil|Absolute=True">Pad MECH3-MH1(121.5mm,101.1mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=806.103mil|Location2.X=4909.45mil|Location1.Y=1808.071mil|Location2.Y=4087.598mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=806.103mil|Location2.X=4909.45mil|Location1.Y=1808.071mil|Location2.Y=4087.598mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4679.134mil|Location2.X=4879.921mil|Location1.Y=1813.976mil|Location2.Y=2014.764mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4679.134mil|Location2.X=4879.921mil|Location1.Y=1813.976mil|Location2.Y=2014.764mil|Absolute=True">Pad MECH4-MH1(121.4mm,48.625mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=806.103mil|Location2.X=4909.45mil|Location1.Y=1808.071mil|Location2.Y=4087.598mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=806.103mil|Location2.X=4909.45mil|Location1.Y=1808.071mil|Location2.Y=4087.598mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDYO2JBE20MP01P23GSF3QVMAWJEAV1HII20HA0YGNT2YKTH1HBVAM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_2_DQ[0..15]'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2542.323mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2542.323mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ0 And Net DDR2_2_DQ15 Length:16.903mm is not within 0.5mm tolerance of Length:18.703mm (1.3mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2542.323mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2542.323mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ1 And Net DDR2_2_DQ15 Length:14.103mm is not within 0.5mm tolerance of Length:18.703mm (4.1mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2404.551mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2404.551mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ2 And Net DDR2_2_DQ15 Length:14.372mm is not within 0.5mm tolerance of Length:18.703mm (3.831mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ3 And Net DDR2_2_DQ15 Length:9.172mm is not within 0.5mm tolerance of Length:18.703mm (9.031mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2510.827mil|Location2.X=2738.409mil|Location1.Y=3111.031mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2510.827mil|Location2.X=2738.409mil|Location1.Y=3111.031mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ4 And Net DDR2_2_DQ15 Length:15.103mm is not within 0.5mm tolerance of Length:18.703mm (3.1mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2510.827mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2510.827mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ5 And Net DDR2_2_DQ15 Length:16.503mm is not within 0.5mm tolerance of Length:18.703mm (1.7mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2562.031mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2562.031mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ6 And Net DDR2_2_DQ15 Length:7.172mm is not within 0.5mm tolerance of Length:18.703mm (11.031mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2573.819mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2573.819mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ7 And Net DDR2_2_DQ15 Length:17.903mm is not within 0.5mm tolerance of Length:18.703mm (0.3mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2668.307mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2668.307mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ8 And Net DDR2_2_DQ15 Length:15.703mm is not within 0.5mm tolerance of Length:18.703mm (2.5mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2668.307mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2668.307mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ9 And Net DDR2_2_DQ15 Length:7.903mm is not within 0.5mm tolerance of Length:18.703mm (10.3mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2601.401mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2601.401mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ10 And Net DDR2_2_DQ15 Length:13.572mm is not within 0.5mm tolerance of Length:18.703mm (4.631mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.811mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.811mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ11 And Net DDR2_2_DQ15 Length:8.503mm is not within 0.5mm tolerance of Length:18.703mm (9.7mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.811mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.811mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ12 And Net DDR2_2_DQ15 Length:7.903mm is not within 0.5mm tolerance of Length:18.703mm (10.3mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2601.401mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2601.401mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ13 And Net DDR2_2_DQ15 Length:14.172mm is not within 0.5mm tolerance of Length:18.703mm (4.031mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2680.141mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2680.141mil|Location2.X=2738.409mil|Location1.Y=3150.401mil|Location2.Y=3811.023mil|Absolute=True">Matched Net Lengths: Between Net DDR2_2_DQ14 And Net DDR2_2_DQ15 Length:8.372mm is not within 0.5mm tolerance of Length:18.703mm (9.831mm short) </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID3SZJAZXO3ZAWIFCLRGFOMJDJBCLZ12FS1NIJG4BGKLOIHU1VHPVP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Matched Lengths(Tolerance=0.5mm) (InNetClass('DDR2_1_DQ[0..15]'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3150.401mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3150.401mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ0 And Net DDR2_1_DQ4 Length:17.972mm is not within 0.5mm tolerance of Length:24.372mm (5.9mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ1 And Net DDR2_1_DQ4 Length:15.772mm is not within 0.5mm tolerance of Length:24.372mm (8.1mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ2 And Net DDR2_1_DQ4 Length:11.572mm is not within 0.5mm tolerance of Length:24.372mm (12.3mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ3 And Net DDR2_1_DQ4 Length:17.772mm is not within 0.5mm tolerance of Length:24.372mm (6.1mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ5 And Net DDR2_1_DQ4 Length:15.972mm is not within 0.5mm tolerance of Length:24.372mm (7.9mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ6 And Net DDR2_1_DQ4 Length:16.772mm is not within 0.5mm tolerance of Length:24.372mm (7.1mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ7 And Net DDR2_1_DQ4 Length:13.372mm is not within 0.5mm tolerance of Length:24.372mm (10.5mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ8 And Net DDR2_1_DQ4 Length:12.503mm is not within 0.5mm tolerance of Length:24.372mm (11.369mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ9 And Net DDR2_1_DQ4 Length:16.303mm is not within 0.5mm tolerance of Length:24.372mm (7.569mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ10 And Net DDR2_1_DQ4 Length:11.503mm is not within 0.5mm tolerance of Length:24.372mm (12.369mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ11 And Net DDR2_1_DQ4 Length:16.572mm is not within 0.5mm tolerance of Length:24.372mm (7.3mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ12 And Net DDR2_1_DQ4 Length:17.172mm is not within 0.5mm tolerance of Length:24.372mm (6.7mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ13 And Net DDR2_1_DQ4 Length:8.903mm is not within 0.5mm tolerance of Length:24.372mm (14.969mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3150.401mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3150.401mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ14 And Net DDR2_1_DQ4 Length:18.572mm is not within 0.5mm tolerance of Length:24.372mm (5.3mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2758.881mil|Location2.X=3060.039mil|Location1.Y=3189.771mil|Location2.Y=3811.024mil|Absolute=True">Matched Net Lengths: Between Net DDR2_1_DQ15 And Net DDR2_1_DQ4 Length:12.503mm is not within 0.5mm tolerance of Length:24.372mm (11.369mm short) </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDB5QWYYOLJSTRF2DDOXMU3Z5X5DZDLWTQOLPFLOLA5O0AF2LWLBUP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Matched Lengths(Tolerance=1mm) (InNetClass('LMS_PORT1'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=3072.439mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=3072.439mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ1_D1 And Net LMS_DIQ1_D6 Length:44.932mm is not within 1mm tolerance of Length:46.6mm (0.668mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3814.132mil|Location1.Y=2520.479mil|Location2.Y=3072.439mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3814.132mil|Location1.Y=2520.479mil|Location2.Y=3072.439mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ1_D2 And Net LMS_DIQ1_D6 Length:42.6mm is not within 1mm tolerance of Length:46.6mm (3mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ1_D3 And Net LMS_DIQ1_D6 Length:42.266mm is not within 1mm tolerance of Length:46.6mm (3.334mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ1_D4 And Net LMS_DIQ1_D6 Length:41.266mm is not within 1mm tolerance of Length:46.6mm (4.334mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3866.574mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3866.574mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ1_D5 And Net LMS_DIQ1_D6 Length:40.266mm is not within 1mm tolerance of Length:46.6mm (5.334mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ1_D8 And Net LMS_DIQ1_D6 Length:44.6mm is not within 1mm tolerance of Length:46.6mm (1mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3814.132mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3814.132mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ1_D9 And Net LMS_DIQ1_D6 Length:42.934mm is not within 1mm tolerance of Length:46.6mm (2.666mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ1_D10 And Net LMS_DIQ1_D6 Length:42.6mm is not within 1mm tolerance of Length:46.6mm (3mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3827.242mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3827.242mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ1_D11 And Net LMS_DIQ1_D6 Length:40.934mm is not within 1mm tolerance of Length:46.6mm (4.666mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3827.242mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3827.242mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True">Matched Net Lengths: Between Net LMS_ENABLE_IQSEL1 And Net LMS_DIQ1_D6 Length:29.268mm is not within 1mm tolerance of Length:46.6mm (16.332mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2365.181mil|Location2.X=3814.132mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2365.181mil|Location2.X=3814.132mil|Location1.Y=2520.479mil|Location2.Y=3059.329mil|Absolute=True">Matched Net Lengths: Between Net LMS_MCLK1 And Net LMS_DIQ1_D6 Length:42.268mm is not within 1mm tolerance of Length:46.6mm (3.332mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3827.242mil|Location1.Y=2520.479mil|Location2.Y=3082.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2483.291mil|Location2.X=3827.242mil|Location1.Y=2520.479mil|Location2.Y=3082.173mil|Absolute=True">Matched Net Lengths: Between Net LMS_TXNRX1 And Net LMS_DIQ1_D6 Length:0mm is not within 1mm tolerance of Length:46.6mm (45.6mm short) </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDN1JII3SQH1ILLPGKUBSAS42GPLC3L0UYWSU2YYJU5E4UBMUOWOIE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Matched Lengths(Tolerance=1mm) (InNetClass('LMS_PORT2'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D0 And Net LMS_DIQ2_D4 Length:29.938mm is not within 1mm tolerance of Length:34.604mm (3.666mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D1 And Net LMS_DIQ2_D4 Length:28.938mm is not within 1mm tolerance of Length:34.604mm (4.666mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D2 And Net LMS_DIQ2_D4 Length:27.604mm is not within 1mm tolerance of Length:34.604mm (6mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D3 And Net LMS_DIQ2_D4 Length:25.938mm is not within 1mm tolerance of Length:34.604mm (7.666mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2875.785mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D5 And Net LMS_DIQ2_D4 Length:32.272mm is not within 1mm tolerance of Length:34.604mm (1.332mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=2888.895mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=2888.895mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D6 And Net LMS_DIQ2_D4 Length:33.27mm is not within 1mm tolerance of Length:34.604mm (0.334mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2888.895mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2888.895mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D7 And Net LMS_DIQ2_D4 Length:31.604mm is not within 1mm tolerance of Length:34.604mm (2mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2902.005mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2902.005mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D8 And Net LMS_DIQ2_D4 Length:31.27mm is not within 1mm tolerance of Length:34.604mm (2.334mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2902.005mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2902.005mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D9 And Net LMS_DIQ2_D4 Length:29.604mm is not within 1mm tolerance of Length:34.604mm (4mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=2915.115mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3853.462mil|Location1.Y=2520.479mil|Location2.Y=2915.115mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D10 And Net LMS_DIQ2_D4 Length:29.936mm is not within 1mm tolerance of Length:34.604mm (3.668mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2915.115mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2915.115mil|Absolute=True">Matched Net Lengths: Between Net LMS_DIQ2_D11 And Net LMS_DIQ2_D4 Length:28.27mm is not within 1mm tolerance of Length:34.604mm (5.334mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2928.225mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=2928.225mil|Absolute=True">Matched Net Lengths: Between Net LMS_ENABLE_IQSEL2 And Net LMS_DIQ2_D4 Length:30.27mm is not within 1mm tolerance of Length:34.604mm (3.334mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3866.574mil|Location1.Y=2520.479mil|Location2.Y=2928.225mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3866.574mil|Location1.Y=2520.479mil|Location2.Y=2928.225mil|Absolute=True">Matched Net Lengths: Between Net LMS_FCLK2 And Net LMS_DIQ2_D4 Length:27.602mm is not within 1mm tolerance of Length:34.604mm (6.002mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=3195.299mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\_space_AltiumDesigner\projects\LimeSDR-source\PCB\LimeSDR-USB_1v5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.251mil|Location2.X=3840.352mil|Location1.Y=2520.479mil|Location2.Y=3195.299mil|Absolute=True">Matched Net Lengths: Between Net LMS_TXNRX2 And Net LMS_DIQ2_D4 Length:0mm is not within 1mm tolerance of Length:34.604mm (33.604mm short) </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

@@ -1,0 +1,30 @@
+Removed Pin From Net: NetName=GND Pin=LED7-3
+Removed Pin From Net: NetName=VCC_SYS Pin=LED9-A
+Removed Pin From Net: NetName=NetLED1_1 Pin=LEDS1-A1
+Removed Pin From Net: NetName=FX3_LED_R Pin=LEDS1-K1
+Removed Pin From Net: NetName=GND Pin=LEDS1-K2
+Removed Pin From Net: NetName=NetLED2_1 Pin=LEDS2-A1
+Removed Pin From Net: NetName=NetLED8_1 Pin=LEDS2-A2
+Removed Pin From Net: NetName=FPGA_LED1_R Pin=LEDS2-K1
+Removed Pin From Net: NetName=FPGA_LED2_R Pin=LEDS2-K2
+Removed Pin From Net: NetName=VCC3P3 Pin=R170-1
+Removed Member From Class: ClassName=BoardPowerSupply Member=C399
+Removed Member From Class: ClassName=BoardPowerSupply Member=C400
+Removed Member From Class: ClassName=FPGA(RAM) Member=LED7
+Removed Member From Class: ClassName=BQ25890 Member=LED9
+Removed Member From Class: ClassName=FPGA(RAM) Member=LEDS1
+Removed Member From Class: ClassName=FPGA(RAM) Member=LEDS2
+Removed Member From Class: ClassName=FPGA(RAM) Member=R170
+Removed Member From Class: ClassName=BoardPowerSupply Member=R185
+Change Component Comment : Designator=R50 Old Comment=2k2, 1% New Comment=280R, 1%
+Added Component: Designator=LED?(LED-2x0603)
+Added Pin To Net: NetName=VCC_SYS Pin=LED?-2
+Added Pin To Net: NetName=GND Pin=LED?-3
+Added Pin To Net: NetName=NetLED?_1 Pin=LED?-1
+Added Pin To Net: NetName=NetLED?_1 Pin=R170-2
+Added Net: Name=NetLED?_1
+Added Pin To Net: NetName=NetLED?_4 Pin=LED?-4
+Added Pin To Net: NetName=NetLED?_4 Pin=R50-2
+Added Net: Name=NetLED?_4
+Added Member To Class: ClassName=BQ25890 Member=Component LED? LED_RG_SMD
+Added Member To Class: ClassName=BQ25890 Member=Component R170 249R, 1%

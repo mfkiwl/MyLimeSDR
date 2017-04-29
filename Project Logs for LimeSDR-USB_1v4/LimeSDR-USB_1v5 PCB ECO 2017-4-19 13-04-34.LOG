@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=R215 Old Footprint=RES0402 New Footprint=RES0402
+Change Component Footprint: Designator=R216 Old Footprint=RES0402 New Footprint=RES0402
+Change Component Library : Designator=J17 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=L1 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=LED5 Old Library=<Unknown Vault> New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=R215 Old Library=LimeMicroAltiumLib_schLib.SchLib New Library=LimeMicroAltiumLib_schLib.SchLib
+Change Component Library : Designator=R216 Old Library=LimeMicroAltiumLib_schLib.SchLib New Library=LimeMicroAltiumLib_schLib.SchLib
+Added Pin To Net: NetName=GND Pin=IC47-11
+Added Pin To Net: NetName=GND Pin=IC48-11

@@ -1,0 +1,29 @@
+Removed Member From Class: ClassName=I2C_BRDG Member=NetIC8_B2
+Removed Member From Class: ClassName=FPGA_SPI0 Member=NetIC8_C8
+Removed Member From Class: ClassName=FPGA_SPI0 Member=NetIC8_D7
+Removed Member From Class: ClassName=FPGA_SPI0 Member=NetIC8_D10
+Removed Member From Class: ClassName=FPGA_SPI0 Member=NetIC8_E6
+Removed Member From Class: ClassName=I2C_BRDG Member=NetIC8_R1
+Change Net Name : Old Net Name=NetC426_1 New Net Name=RF2_CTL.TX_P1
+Change Net Name : Old Net Name=NetC427_2 New Net Name=RF2_CTL.TX_P2
+Change Net Name : Old Net Name=NetC428_1 New Net Name=RF1_CTL.TX_P1
+Change Net Name : Old Net Name=NetC453_2 New Net Name=RF1_CTL.TX_P2
+Change Net Name : Old Net Name=NetIC8_B1 New Net Name=BRDG_SPI_MOSI
+Change Net Name : Old Net Name=NetIC8_B2 New Net Name=BRDG_SPI_SCLK
+Change Net Name : Old Net Name=NetIC8_C1 New Net Name=BRDG_SPI_MISO
+Change Net Name : Old Net Name=NetIC8_C2 New Net Name=FPGA_CLK_OUT
+Change Net Name : Old Net Name=NetIC8_C8 New Net Name=FPGA_SPI0_MISO
+Change Net Name : Old Net Name=NetIC8_D7 New Net Name=FPGA_SPI0_MOSI
+Change Net Name : Old Net Name=NetIC8_D10 New Net Name=FPGA_SPI0_LMS_SS
+Change Net Name : Old Net Name=NetIC8_E6 New Net Name=FPGA_SPI0_SCLK
+Change Net Name : Old Net Name=NetIC8_J1 New Net Name=FPGA_UART_RX
+Change Net Name : Old Net Name=NetIC8_J2 New Net Name=ADF_MUXOUT
+Change Net Name : Old Net Name=NetIC8_J8 New Net Name=FPGA_UART_TX
+Change Net Name : Old Net Name=NetIC8_K7 New Net Name=BRDG_SPI_FPGA_SS
+Change Net Name : Old Net Name=NetIC8_R1 New Net Name=BRDG_INT
+Added Member To Class: ClassName=I2C_BRDG Member=Wire BRDG_INT
+Added Member To Class: ClassName=I2C_BRDG Member=Wire BRDG_SPI_SCLK
+Added Member To Class: ClassName=FPGA_SPI0 Member=Wire FPGA_SPI0_LMS_SS
+Added Member To Class: ClassName=FPGA_SPI0 Member=Wire FPGA_SPI0_MISO
+Added Member To Class: ClassName=FPGA_SPI0 Member=Wire FPGA_SPI0_MOSI
+Added Member To Class: ClassName=FPGA_SPI0 Member=Wire FPGA_SPI0_SCLK

@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=C368 Old Footprint=CAP0402 New Footprint=CAP0603
+Change Component Comment : Designator=C368 Old Comment=47nF, 10V New Comment=47nF, 25V

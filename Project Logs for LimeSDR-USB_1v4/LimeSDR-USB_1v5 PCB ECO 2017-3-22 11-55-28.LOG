@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=LED9 Old Footprint=LED-0603-GREEN New Footprint=LED-0603-GREEN
+Change Component Footprint: Designator=IC25 Old Footprint=SOT-89-ADI-RK-3_M New Footprint=SOT-89-ADI-RK-3_M
+Change Component Footprint: Designator=IC44 Old Footprint=SOT-89-ADI-RK-3_M New Footprint=SOT-89-ADI-RK-3_M

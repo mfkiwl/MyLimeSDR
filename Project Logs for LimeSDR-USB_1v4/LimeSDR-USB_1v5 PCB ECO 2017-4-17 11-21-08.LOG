@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=C456-1
+Removed Pin From Net: NetName=VCC_SYS Pin=C456-2
+Removed Pin From Net: NetName=VCC_SYS Pin=C457-1
+Removed Pin From Net: NetName=GND Pin=C457-2
+Removed Member From Class: ClassName=BQ25890 Member=C456
+Removed Member From Class: ClassName=BQ25890 Member=C457
